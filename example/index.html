@@ -7,8 +7,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="format-detection" content="telephone=no">
-    <script>
+    <!-- <script>
       <%= require('html!../service-worker/index.js') %>
+    </script> -->
+    <script>
+      (function() {
+      	if('serviceWorker' in navigator) {
+      		navigator.serviceWorker.register('sw.js').then((reg) => {
+      			console.log('service worker 注册成功');
+      		}).catch((err) => {
+      			console.log('servcie worker 注册失败', err)
+      		});
+      	}
+      })();
     </script>
   </head>
   <body>

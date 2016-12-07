@@ -9,7 +9,7 @@
 // }
 (function() {
 	if('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/service-worker/sw.js').then((reg) => {
+		navigator.serviceWorker.register('sw.js').then((reg) => {
 			console.log('service worker 注册成功');
 		}).catch((err) => {
 			console.log('servcie worker 注册失败', err)

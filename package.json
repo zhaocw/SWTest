@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "node_modules/webpack/bin/webpack.js --config webpack.config.js -w --progress",
+    "build": "cross-env NODE_ENV=production webpack --progress",
     "release": "cross-env NODE_ENV=production webpack --progress && git add . && git commit -m 'build' && git pull origin master && git push origin master"
   },
   "repository": {
