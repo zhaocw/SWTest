@@ -65,7 +65,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: examplePath + '/index.html',
-      filename: 'index.html'
+      filename: 'index-[hash:8].html'
     }),
     new SWPrecacheWebpackPlugin(
       {
