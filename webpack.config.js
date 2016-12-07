@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CleanWebpackPlugin = require('clean-webpack-plugin');
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 var px2rem = require('postcss-px2rem');
 var pkg = require('./package.json');
@@ -68,6 +69,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: examplePath + '/index.html',
       filename: 'index.html'
-    })
+    }),
+    new SWPrecacheWebpackPlugin(
+      {
+        cacheId: 'SWTest',
+        filename: 'service-worker/sw.js',
+        maximumFileSizeToCacheInBytes: 4194304,
+        runtimeCaching: [{
+          handler: 'cacheFirst',
+          urlPattern: /[.]mp3$/,
+        }],
+      }
+    )
   ]
 };
