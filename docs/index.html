@@ -11,8 +11,9 @@
       'use strict';
 
 if ('serviceWorker' in window.navigator) {
-	var sw = '/sw.js';
-	navigator.serviceWorker.register(sw, { insecure: true }).then(function (reg) {
+	var sw = './sw.js';
+	// , { insecure: true }
+	navigator.serviceWorker.register(sw).then(function (reg) {
 		console.log('service worker 注册成功');
 	}).catch(function (err) {
 		console.log('servcie worker 注册失败', err);
