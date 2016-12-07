@@ -15,17 +15,14 @@ var examplePath = path.join(__dirname, '/example');
 var indexEntries = [examplePath + '/app.js'];
 
 module.exports = {
-  // entry: {
-  //   js: examplePath + '/app.js'
-  // },
   entry: indexEntries,
   output: {
+    // -[chunkhash]
     filename: 'bundle.js',
     path: packPath,
     publicPath: publicPath
   },
   debug: true,
-  // devtool: 'source-map',
    resolve: {
     alias: {
       libs: path.join(__dirname, './libs'),
@@ -44,7 +41,8 @@ module.exports = {
     }, {
       test: /\.(png|jpg|jpeg|gif)$/,
       exclude: /node_modules/,
-      loader: 'url?limit=8192&name=./images/[name].[ext]'
+      // -[hash:8]
+      loader: 'url?limit=8192&name=images/[name].[ext]'
     }]
   },
   postcss: [autoprefixer({ browsers: [ '> 5%', 'last 2 versions' ] })],
@@ -63,7 +61,8 @@ module.exports = {
       verbose: true,
       dry: false
     }),
-    new ExtractTextPlugin("style-[contenthash:8].css", {
+    // -[contenthash:8]
+    new ExtractTextPlugin("style.css", {
       allChunks: true
     }),
     new HtmlWebpackPlugin({
