@@ -5,6 +5,7 @@ var urlsToCache = [
   './dist/index.html',
 	'./dist/bundle.js',
 ];
+console.log("=======", urlsToCache);
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
