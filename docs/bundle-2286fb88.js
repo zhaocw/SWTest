@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0e773a454259226246f6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2286fb888f11654050bc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13683,7 +13683,6 @@
 	          i
 	        ));
 	      }
-	      alert(12);
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'page-home' },
