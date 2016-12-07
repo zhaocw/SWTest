@@ -2,7 +2,7 @@ importScripts('./polyfill.js');
 var CACHE_NAME = 'SWTest';
 
 var urlsToCache = [
-	'/dist/bundle.js',
+	'/bundle.js',
 ];
 console.log("=======", urlsToCache);
 
