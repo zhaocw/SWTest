@@ -73,8 +73,7 @@ module.exports = {
     new SWPrecacheWebpackPlugin(
       {
         cacheId: 'SWTest',
-        filename: 'sw.js',
-        filepath: 'service-worker',
+        filename: 'service-worker/sw.js',
         maximumFileSizeToCacheInBytes: 4194304,
         runtimeCaching: [{
           handler: 'cacheFirst',
