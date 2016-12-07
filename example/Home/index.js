@@ -9,7 +9,7 @@ export default class Home extends React.Component {
     }
     return (
       <div className="page-home">
-        HomeTest
+        Home
       </div>
     );
   }
