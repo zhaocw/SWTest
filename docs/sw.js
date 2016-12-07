@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["https://zhaocw.github.io/SWTest/bundle-457c47d1.js","3fdb3281a487f538c2e2efff226afc22"],["https://zhaocw.github.io/SWTest/index-28fa9f4f.html","25e54ac9ffabd6bc747e2c4fdc2f37b7"],["https://zhaocw.github.io/SWTest/style-4643e0bc.css","4643e0bc7d52c4698811f08d50f1268c"]];
+var precacheConfig = [["https://zhaocw.github.io/SWTest/bundle-2286fb88.js","87e0a79d74046cfd3cc9103999726f42"],["https://zhaocw.github.io/SWTest/index-28fa9f4f.html","7f262da583690848d4019cebe8ad672f"],["https://zhaocw.github.io/SWTest/style-4643e0bc.css","4643e0bc7d52c4698811f08d50f1268c"]];
 var cacheName = 'sw-precache-v2-SWTest-' + (self.registration ? self.registration.scope : '');
 
 
