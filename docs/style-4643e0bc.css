@@ -1,0 +1,36 @@
+.page-index h1 {
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.page-index ul {
+  text-align: center;
+}
+
+.page-index ul li {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

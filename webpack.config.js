@@ -18,7 +18,7 @@ var indexEntries = [examplePath + '/app.js'];
 module.exports = {
   entry: indexEntries,
   output: {
-    filename: 'bundle-[chunkhash].js',
+    filename: 'bundle-[hash:8].js',
     path: packPath,
     publicPath: publicPath
   },
@@ -60,8 +60,7 @@ module.exports = {
       verbose: true,
       dry: false
     }),
-    // -[contenthash:8]
-    new ExtractTextPlugin("style.css", {
+    new ExtractTextPlugin("style-[contenthash:8].css", {
       allChunks: true
     }),
     new HtmlWebpackPlugin({
