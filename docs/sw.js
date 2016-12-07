@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["https://zhaocw.github.io/SWTest/bundle.js","0082fc93e59a174cb78ce087f68e0e5f"],["https://zhaocw.github.io/SWTest/index.html","32f1c3e1213c60a715856b583435bfe3"]];
+var precacheConfig = [];
 var cacheName = 'sw-precache-v2-SWTest-' + (self.registration ? self.registration.scope : '');
 
 

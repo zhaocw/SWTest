@@ -18,8 +18,7 @@ var indexEntries = [examplePath + '/app.js'];
 module.exports = {
   entry: indexEntries,
   output: {
-    // -[chunkhash]
-    filename: 'bundle.js',
+    filename: 'bundle-[chunkhash].js',
     path: packPath,
     publicPath: publicPath
   },
@@ -38,12 +37,11 @@ module.exports = {
     }, {
       test: /\.scss$/,
       exclude: /(node_modules)/,
-			loader: 'style!css!postcss!sass'
+			loader: ExtractTextPlugin.extract('style','css!postcss!sass?outputStyle=expanded')
     }, {
       test: /\.(png|jpg|jpeg|gif)$/,
       exclude: /node_modules/,
-      // -[hash:8]
-      loader: 'url?limit=8192&name=images/[name].[ext]'
+      loader: 'url?limit=8192&name=images/[name]-[hash:8].[ext]'
     }]
   },
   postcss: [autoprefixer({ browsers: [ '> 5%', 'last 2 versions' ] })],
