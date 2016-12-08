@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ca563ce9fa531aea3970"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "39446adf46ca3b7e32af"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13817,6 +13817,10 @@
 	      }).then(function (data) {
 	        alert(12);
 	        console.log(data);
+	      }, function () {
+	        alert(13);
+	      }).catch(function () {
+	        alert(14);
 	      });
 	    }
 	  }, {

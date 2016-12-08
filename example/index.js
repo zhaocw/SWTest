@@ -7,6 +7,10 @@ export default class Home extends Component {
     fetch('https://api.douban.com/v2/movie/in_theaters', { credentials: 'include' }).then((response) => response.json()).then((data) => {
       alert(12);
       console.log(data);
+    }, () => {
+      alert(13);
+    }).catch(() => {
+      alert(14);
     });
   }
   render() {
