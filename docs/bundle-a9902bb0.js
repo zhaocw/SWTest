@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e27e849d1442e7774073"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a9902bb0723055e32b16"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13815,7 +13815,7 @@
 	      fetch('https://api.github.com/', { credentials: true }).then(function (response) {
 	        return response.json();
 	      }).then(function (data) {
-	        console.log(data);
+	        console.log(data);console.log(data);
 	      });
 	    }
 	  }, {
