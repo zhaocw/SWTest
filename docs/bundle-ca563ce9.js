@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3a7c98e1c5dfe6206eb4"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ca563ce9fa531aea3970"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13815,6 +13815,7 @@
 	      fetch('https://api.douban.com/v2/movie/in_theaters', { credentials: 'include' }).then(function (response) {
 	        return response.json();
 	      }).then(function (data) {
+	        alert(12);
 	        console.log(data);
 	      });
 	    }

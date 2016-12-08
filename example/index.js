@@ -5,6 +5,7 @@ import png from './2.jpg';
 export default class Home extends Component {
   componentDidMount() {
     fetch('https://api.douban.com/v2/movie/in_theaters', { credentials: 'include' }).then((response) => response.json()).then((data) => {
+      alert(12);
       console.log(data);
     });
   }
