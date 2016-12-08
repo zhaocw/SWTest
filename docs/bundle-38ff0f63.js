@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2514f6b1b00fbec83595"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "38ff0f633d5c34d1ef13"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13812,7 +13812,7 @@
 	  (0, _createClass3.default)(Home, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      fetch('https://api.github.com/', { credentials: 'include' }).then(function (response) {
+	      fetch('https://api.github.com/', { credentials: true }).then(function (response) {
 	        return response.json();
 	      }).then(function (data) {
 	        alert(11);

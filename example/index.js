@@ -4,7 +4,7 @@ import styles from './index.scss';
 import png from './2.jpg';
 export default class Home extends Component {
   componentDidMount() {
-    fetch('https://api.github.com/', { credentials: 'include' }).then((response) => response.json()).then((data) => {
+    fetch('https://api.github.com/', { credentials: true }).then((response) => response.json()).then((data) => {
       alert(11);
       console.log(data);
     }, () => {
