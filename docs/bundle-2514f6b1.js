@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "39446adf46ca3b7e32af"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2514f6b1b00fbec83595"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13812,15 +13812,15 @@
 	  (0, _createClass3.default)(Home, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      fetch('https://api.douban.com/v2/movie/in_theaters', { credentials: 'include' }).then(function (response) {
+	      fetch('https://api.github.com/', { credentials: 'include' }).then(function (response) {
 	        return response.json();
 	      }).then(function (data) {
-	        alert(12);
+	        alert(11);
 	        console.log(data);
 	      }, function () {
-	        alert(13);
+	        alert(12);
 	      }).catch(function () {
-	        alert(14);
+	        alert(15);
 	      });
 	    }
 	  }, {
