@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "269e451e80b907766909"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "98d796d9dbe33f6c567f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -1052,7 +1052,7 @@
 	exports.default = routerWarning;
 	exports._resetWarned = _resetWarned;
 
-	var _warning = __webpack_require__(322);
+	var _warning = __webpack_require__(323);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -13795,6 +13795,10 @@
 
 	var _index2 = _interopRequireDefault(_index);
 
+	var _ = __webpack_require__(322);
+
+	var _2 = _interopRequireDefault(_);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Home = function (_Component) {
@@ -13816,6 +13820,7 @@
 	          null,
 	          'SW'
 	        ),
+	        _react2.default.createElement('img', { src: _2.default, width: 100, height: 100 }),
 	        _react2.default.createElement(
 	          'ul',
 	          null,
@@ -28194,6 +28199,12 @@
 
 /***/ },
 /* 322 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "images/2-e0b01191.jpg";
+
+/***/ },
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
