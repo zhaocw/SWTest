@@ -6,7 +6,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className={'page-index'}>
-        <h1>SW测试</h1>
+        <h1>SW</h1>
         <ul>
 					<li><Link to="/home">HomeTest</Link></li>
         </ul>

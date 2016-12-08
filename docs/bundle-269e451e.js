@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "60af704635a97e11859c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "269e451e80b907766909"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13814,7 +13814,7 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'SW\u6D4B\u8BD5'
+	          'SW'
 	        ),
 	        _react2.default.createElement(
 	          'ul',
