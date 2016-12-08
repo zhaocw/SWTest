@@ -3,6 +3,11 @@ import { IndexLink, Link } from 'react-router';
 import styles from './index.scss';
 import png from './2.jpg';
 export default class Home extends Component {
+  componentDidMount() {
+    fetch('https://api.douban.com/v2/movie/in_theaters').then((response) => response.json()).then((data) => {
+      console.log(data);
+    });
+  }
   render() {
     return (
       <div className={'page-index'}>
