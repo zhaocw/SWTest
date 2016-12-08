@@ -1,6 +1,6 @@
 {
   "name": "SWTest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SW测试",
   "main": "webpack.config.js",
   "scripts": {
