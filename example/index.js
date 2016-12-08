@@ -8,7 +8,7 @@ export default class Home extends Component {
       <div className={'page-index'}>
         <h1>SW测试</h1>
         <ul>
-					<li><Link to="/home">Home</Link></li>
+					<li><Link to="/home">HomeTest</Link></li>
         </ul>
       </div>
     );

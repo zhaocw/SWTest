@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2286fb888f11654050bc"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "60af704635a97e11859c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -13825,7 +13825,7 @@
 	            _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: '/home' },
-	              'Home'
+	              'HomeTest'
 	            )
 	          )
 	        )
