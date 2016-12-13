@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["https://zhaocw.github.io/SWTest/bundle-3d974000.js","32618be39326056f5b39d077d433e280"],["https://zhaocw.github.io/SWTest/images/2-e0b01191.jpg","e0b011912948101f049478708d80e828"],["https://zhaocw.github.io/SWTest/index.html","3c00e307ab91946251d12ea25f370020"],["https://zhaocw.github.io/SWTest/style-4643e0bc.css","4643e0bc7d52c4698811f08d50f1268c"]];
+var precacheConfig = [["https://zhaocw.github.io/SWTest/bundle-b8b4e18d.js","c8397dc6e6ada8eeada4a7e601c04f06"],["https://zhaocw.github.io/SWTest/images/2-e0b01191.jpg","e0b011912948101f049478708d80e828"],["https://zhaocw.github.io/SWTest/index.html","dacebe7a99893edd544fe212069ea41d"],["https://zhaocw.github.io/SWTest/style-4643e0bc.css","4643e0bc7d52c4698811f08d50f1268c"]];
 var cacheName = 'sw-precache-v2-SWTest-' + (self.registration ? self.registration.scope : '');
 
 
@@ -197,7 +197,7 @@ self.addEventListener('fetch', function(event) {
     if (!shouldRespond &&
         navigateFallback &&
         (event.request.mode === 'navigate') &&
-        isPathWhitelisted([], event.request.url)) {
+        isPathWhitelisted([null], event.request.url)) {
       url = new URL(navigateFallback, self.location).toString();
       shouldRespond = urlsToCacheKeys.has(url);
     }

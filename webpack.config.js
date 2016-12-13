@@ -74,6 +74,7 @@ module.exports = {
         // filename: 'service-worker/sw.js',
         // filepath:
         maximumFileSizeToCacheInBytes: 4194304,
+        navigateFallbackWhitelist: ['style.css'],
         runtimeCaching: [{
           handler: 'cacheFirst',
           urlPattern: /[.]mp3$/,
