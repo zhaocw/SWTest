@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b8b4e18d1d84fed72ad3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fc0105b75193fb6f7c64"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -13688,7 +13688,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'page-home' },
-	        'HomeTest'
+	        'HomeTest1111'
 	      );
 	    }
 	  }]);
