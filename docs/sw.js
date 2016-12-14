@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["https://zhaocw.github.io/SWTest/bundle-fc0105b7.js","3254003bde9cf40cc8660256e8e19291"],["https://zhaocw.github.io/SWTest/images/2-e0b01191.jpg","e0b011912948101f049478708d80e828"],["https://zhaocw.github.io/SWTest/index.html","25153827c957f1bb57581ec6b1d33652"],["https://zhaocw.github.io/SWTest/style-33ca51df.css","33ca51df5afa376e8df1c6596e4b0b05"]];
+var precacheConfig = [["https://zhaocw.github.io/SWTest/bundle-6bd038ae.js","112fb6688934e128b77144f5be1273f8"],["https://zhaocw.github.io/SWTest/images/2-e0b01191.jpg","e0b011912948101f049478708d80e828"],["https://zhaocw.github.io/SWTest/index.html","03e78e8661b71d49e3328df26c5e408c"],["https://zhaocw.github.io/SWTest/style-33ca51df.css","33ca51df5afa376e8df1c6596e4b0b05"]];
 var cacheName = 'sw-precache-v2-SWTest-' + (self.registration ? self.registration.scope : '');
 
 

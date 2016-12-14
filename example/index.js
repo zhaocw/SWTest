@@ -14,7 +14,7 @@ export default class Home extends Component {
         <h1>SW</h1>
         <img src={png} width={100} height={100} />
         <ul>
-					<li><Link to="/home">HomeTest</Link></li>
+					<li><Link to="/home">HomeTest111</Link></li>
         </ul>
       </div>
     );

@@ -11,9 +11,17 @@ var isProd = process.env.NODE_ENV === 'production';
 
 var packPath = isProd ? path.join(__dirname, '/docs') : path.join(__dirname, '/dist');
 var publicPath = isProd ? 'https://zhaocw.github.io/' + pkg.name + '/' : './';
-
+// publicPath = './';
 var examplePath = path.join(__dirname, '/example');
 var indexEntries = [examplePath + '/app.js'];
+var devServer = {};
+if (!isProd) {
+  indexEntries.push('webpack-dev-server/client?http://localhost:5000/');
+  indexEntries.push('webpack/hot/dev-server');
+  devServer = { port: 5000, inline: true, historyApiFallback: false, colors: true, stats: 'normal' };
+}
+
+
 
 module.exports = {
   entry: indexEntries,
@@ -29,6 +37,7 @@ module.exports = {
       components: path.join(__dirname, './components'),
     }
   },
+  devServer: devServer,
   module: {
     loaders: [{
       test: /\.jsx?$/,
